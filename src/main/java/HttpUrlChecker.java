@@ -28,6 +28,6 @@ public class HttpUrlChecker {
 	private static Pattern p = Pattern.compile("^http(s)?:\\/\\/(www\\.)?[0-9a-zA-Z]+(-?[0-9a-zA-Z])*(\\.[a-zA-Z]+)+$");
 
     static Matcher getMatcher(String httpString) {
-        return P.matcher(httpString);
+        return p.matcher(httpString);
     }
 }
